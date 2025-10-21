@@ -1,6 +1,7 @@
 docker run \
   --gpus all \
   --net=host \
+  --rm \
   --user=$(id -u):$(id -g) \
   --env=DISPLAY=$DISPLAY \
   --env=NVIDIA_VISIBLE_DEVICES=all \

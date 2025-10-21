@@ -1,0 +1,33 @@
+{
+  "name": "Carla 0.9.16",
+  "image": "carlasim/carla:0.9.16",
+  "runArgs": [
+    "--runtime=nvidia",
+    "--network=host",
+    "--env=DISPLAY",
+    "--env=NVIDIA_VISIBLE_DEVICES=all",
+    "--env=NVIDIA_DRIVER_CAPABILITIES=all",
+    "--volume=/tmp/.X11-unix:/tmp/.X11-unix:rw"
+  ],
+  "remoteUser": "root",
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/home/carla,type=bind,consistency=cached"
+  ],
+  "workspaceFolder": "/workspace",
+  "postCreateCommand": "python3 -m pip install --upgrade pip setuptools || true",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+      },
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-vscode.cpptools",
+        "ms-azuretools.vscode-docker",
+        "eamodio.gitlens",
+        "ms-vscode-remote.remote-containers"
+      ]
+    }
+  }
+}

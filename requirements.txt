@@ -1,1 +1,4 @@
-carla==0.9.16
+carla==0.9.15
+numpy>=1.19,<2.0
+pygame>=2.2.0
+opencv-python>=4.5,<5.0

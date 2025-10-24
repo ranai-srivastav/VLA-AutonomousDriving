@@ -1,0 +1,29 @@
+{
+  "town": "Town03",
+  "vehicles": [
+    {
+      "blueprint": "vehicle.tesla.model3",
+      "role_name": "car1",
+      "spawn_point_index": 55,
+      "offset_along": -40.0,
+      "offset_right": 0.0,
+      "offset_up": 0.0,
+      "yaw_offset": 0.0
+    },
+    {
+      "blueprint": "vehicle.lincoln.mkz_2017",
+      "role_name": "car2",
+      "spawn_point_index": 55,
+      "offset_along": -30.0,
+      "offset_right": 0.0
+    },
+    {
+      "blueprint": "vehicle.audi.tt",
+      "role_name": "car3",
+      "spawn_point_index": 200,
+      "offset_along": 5.0,
+      "offset_right": 0.0
+    }
+  ],
+  "background_vehicles": 4
+}

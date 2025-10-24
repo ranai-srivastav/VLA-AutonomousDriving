@@ -23,7 +23,7 @@ def main(host='127.0.0.1', port=2000, run_seconds=60):
 
 	print(f'Connecting to CARLA server at {host}:{port}...')
 	try:
-		world = client.load_world('Town02')
+		world = client.load_world('Town03')
 	except Exception as e:
 		print('Could not get world from server:', e)
 		return 1
